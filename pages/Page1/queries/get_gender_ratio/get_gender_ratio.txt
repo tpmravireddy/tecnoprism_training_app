@@ -1,0 +1,4 @@
+SELECT COUNT(id), gender
+FROM public."users"
+WHERE country = {{Select1.selectedOptionValue}}
+GROUP BY gender;
